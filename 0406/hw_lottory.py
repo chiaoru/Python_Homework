@@ -20,7 +20,7 @@ import random
 
 number = []
 
-for i in range(6):
+for i in range(7):
     ans =random.randint(1,49)
     
     if number.count(ans) > 0:
@@ -29,7 +29,7 @@ for i in range(6):
         number.append(ans)
     
 number.sort()
-print(number)
+#print(number)
 
 # 2. 使用者可決定下 多少 注，每注由使用者輸入 1~49 的 6個號碼，不重複
 times = int(input("請輸入欲下注幾次："))
@@ -79,6 +79,8 @@ for j in range(times):
             
     bingo.sort()
     bingoN.append(bingo)
+    
+print("本期開獎號碼為：", number)
     
 if len(bingoN) > 0:
     count = 0
